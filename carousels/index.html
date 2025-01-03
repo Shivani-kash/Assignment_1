@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Section -->
+    <div class="container product-section mt-4">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://www.pngplay.com/wp-content/uploads/7/Headphones-PNG-HD-Quality.png" alt="Product Image" class="product-image">
+            </div>
+            <div class="col-md-6">
+                <h2>Bose QuietComfort 45</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae eros eu erat fermentum tincidunt. Nulla facilisi. Vestibulum euismod, est eu facilisis vehicula, turpis nisl laoreet ipsum, nec accumsan lorem magna at nulla.</p>
+                <p><strong>Price:</strong> $199</p>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Carousel -->
+    <h1>Trending</h1>
+    <div id="imageCarousel" class="carousel slide carousel-container mt-4" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.pngplay.com/wp-content/uploads/7/Headphones-PNG-HD-Quality.png" class="d-block w-100" alt="Headphones">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bose QuietComfort 45</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste hic animi nemo porro perspiciatis?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://freepngimg.com/thumb/headphones/21-headphones-png-image.png" class="d-block w-100" alt="Headphones">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>JBL Club One</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste hic animi nemo porro perspiciatis?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://purepng.com/public/uploads/large/purepng.com-headphoneelectronics-headset-headphone-941524670117zoozj.png" class="d-block w-100" alt="Headphones">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Audio-Technica ATH-M50x</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iste hic animi nemo porro perspiciatis?</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Video Carousel -->
+    <div id="videoCarousel" class="carousel slide carousel-container mt-4" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Video 1"></button>
+            <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1" aria-label="Video 2"></button>
+            <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="2" aria-label="Video 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video class="d-block w-100" autoplay loop muted>
+                    <source src="https://videos.pexels.com/video-files/3196427/3196427-uhd_2560_1440_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Beats Studio3 Wireless</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay loop muted>
+                    <source src="https://videos.pexels.com/video-files/3761461/3761461-uhd_2560_1440_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Audio-Technica ATH-M50x</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay loop muted>
+                    <source src="https://videos.pexels.com/video-files/3205404/3205404-hd_1920_1080_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Samsung Galaxy Buds Pro</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="container mt-4">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+        <div class="container">
+            <p>&copy; 2025 My Website. All rights reserved.</p>
+            <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Privacy Policy</a></li>
+                <li><a href="#" class="text-white">Terms of Service</a></li>
+                <li><a href="#" class="text-white">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
